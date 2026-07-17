@@ -11,6 +11,16 @@ body {
   color: #243e63;
 }
 
+.nav {
+  padding-top: 32px;
+  display: flex;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav__logo {
   display: flex;
   align-items: center;
@@ -29,4 +39,11 @@ body {
   margin-left: 12px;
   padding-bottom: 2px;
   letter-spacing: 0.6px;
+}
+
+@media (max-width: 640px) {
+  .nav__logo {
+    margin: 8px 0;
+    padding-bottom: 4px;
+  }
 }
